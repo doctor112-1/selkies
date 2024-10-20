@@ -1,0 +1,18 @@
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+<menu id="root-menu" label="Openbox 3">
+  <item label="Steam">
+    <action name="Execute"><execute>sudo /usr/games/steam</execute></action>
+  </item>
+  <item label="Terminal">
+    <action name="Execute"><execute>x-terminal-emulator</execute></action>
+  </item>
+  <item label="Timer">
+    <action name="Execute"><execute>/Timer.x86_64</execute></action>
+  </item>
+</menu>
+
+</openbox_menu>
