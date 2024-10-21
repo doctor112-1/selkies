@@ -30,6 +30,10 @@ RUN chmod +x stop.sh
 COPY Timer.x86_64 Timer.x86_64
 RUN apt-get install -y dbus
 RUN apt-get install -y dbus-x11
+RUN apt-get install -y libnvidia-egl-wayland1
+RUN add-apt-repository ppa:kisak/kisak-mesa
+RUN apt update -y
+RUN apt upgrade -y
 #RUN echo "app    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 #RUN useradd -ms /bin/bash -p "$(openssl passwd -1 reyv)" reyv
 #RUN usermod -aG sudo reyv
